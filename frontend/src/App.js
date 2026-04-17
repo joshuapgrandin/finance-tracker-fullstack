@@ -1,8 +1,11 @@
 import { TrendingUp, TrendingDown, Wallet } from "lucide-react";
 import Button from "./components/Button";
 import SummaryCard from "./components/SummaryCard";
+import FilterDropdown from "./components/FilterDropdown";
 
 function App() {
+  const months = ["Jan", "Feb", "March"];
+
   return (
     <div className="min-h-screen bg-dark-bg p-6">
       <div className="max-w-3xl mx-auto py-8 px-8">
@@ -51,6 +54,13 @@ function App() {
             amount={10000}
             amountColor={"text-income-text"}
           />
+        </div>
+        {/* SUB HEADER WITH FILTERS */}
+        <div className="flex justify-between items-center gap-2">
+          <h2 className="text-gray-300 font-bold text-2xl my-6">
+            Recent Transactions
+          </h2>
+          <FilterDropdown label={"Month"} options={months} value={"month"} />
         </div>
       </div>
     </div>
