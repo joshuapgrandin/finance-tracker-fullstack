@@ -18,7 +18,7 @@ const TransactionItem = ({
         </div>
         <p className="text-neutral-900">{description}</p>
       </div>
-      <p className={`${amountColour}`}>{amount}</p>
+      <p className={`${amountColour} font-semibold`}>{amount}</p>
     </div>
   );
 };

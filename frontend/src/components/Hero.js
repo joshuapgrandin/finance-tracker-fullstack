@@ -6,9 +6,9 @@ import TransactionItem from "./TransactionItem";
 
 const Hero = () => {
   return (
-    <section className="max-w-7xl flex flex-col md:grid md:grid-cols-2 gap-12 m-6">
+    <section className="max-w-7xl mx-auto flex flex-col md:grid md:grid-cols-2 gap-12 m-6">
       {/*LEFT SIDE TEXT */}
-      <div className="pt-10">
+      <div className="pt-10 m-6">
         <h1 className="text-4xl font-semibold text-neutral-900">
           Know where your <br /> money goes.
         </h1>
@@ -26,7 +26,7 @@ const Hero = () => {
         </p>
       </div>
       {/*RIGHTSIDE CARD */}
-      <div className="bg-white p-6 shadow-md border-neutral-200 rounded-lg m-6">
+      <div className="bg-white p-6 shadow-xl border-neutral-200 rounded-lg m-6">
         <div className="p-4 space-y-2">
           <BalanceCard />
           <div className="grid grid-cols-2 gap-4">
@@ -49,7 +49,7 @@ const Hero = () => {
             <TransactionItem
               transactionType={"Salary"}
               description={"Work Income"}
-              amount={"£3,200"}
+              amount={"+ £3,200"}
               isIncome={true}
             />
           </div>
