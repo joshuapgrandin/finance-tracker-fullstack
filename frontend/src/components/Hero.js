@@ -3,30 +3,58 @@ import PrimaryButton from "./buttons/PrimaryButton";
 import SecondaryButton from "./buttons/SecondaryButton";
 import StatCard from "./StatCard";
 import TransactionItem from "./TransactionItem";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <section className="max-w-7xl mx-auto flex flex-col md:grid md:grid-cols-2 gap-12 m-6">
       {/*LEFT SIDE TEXT */}
       <div className="pt-10 m-6">
-        <h1 className="text-4xl font-semibold text-neutral-900">
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="text-4xl font-semibold text-neutral-900"
+        >
           Know where your <br /> money goes.
-        </h1>
-        <p className="text-neutral-500 mt-4">
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+          className="text-neutral-500 mt-4"
+        >
           Log income and expenses in seconds. See your balance update in real
           time. No spreadsheets, no bank linking, no faff.
-        </p>
+        </motion.p>
+
         {/*BUTTONS*/}
-        <div className="flex gap-2 mt-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+          className="flex gap-2 mt-6"
+        >
           <PrimaryButton text={"Sign up free"} />
           <SecondaryButton text={"See a demo"} />
-        </div>
-        <p className="text-xs mt-2 text-neutral-300">
+        </motion.div>
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
+          className="text-xs mt-2 text-neutral-300"
+        >
           Free forever - No card required
-        </p>
+        </motion.p>
       </div>
       {/*RIGHTSIDE CARD */}
-      <div className="bg-white p-6 shadow-xl border-neutral-200 rounded-lg m-6">
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+        className="bg-white p-6 shadow-xl border-neutral-200 rounded-lg m-6"
+      >
         <div className="p-4 space-y-2">
           <BalanceCard />
           <div className="grid grid-cols-2 gap-4">
@@ -54,7 +82,7 @@ const Hero = () => {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -1,8 +1,16 @@
-const SecondaryButton = ({ text }) => {
+import { motion } from "framer-motion";
+
+const SecondaryButton = ({ text, onClick }) => {
   return (
-    <button className="bg-neutral-50 border-neutral-200 border px-4 py-2 rounded-md text-neutral-900 text-sm hover:bg-neutral-100 hover:border-neutral-300 transition-all">
+    <motion.button
+      whileHover={{ scale: 1.03 }}
+      whileTap={{ scale: 0.98 }}
+      transition={{ type: "spring", stiffness: 400, damping: 17 }}
+      onClick={onClick}
+      className="bg-neutral-50 border-neutral-200 border px-6 py-3 rounded-lg text-neutral-900 font-semibold hover:bg-neutral-100 hover:border-neutral-300 transition-colors"
+    >
       {text}
-    </button>
+    </motion.button>
   );
 };
 
