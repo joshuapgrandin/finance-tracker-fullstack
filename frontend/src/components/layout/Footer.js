@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import Logo from "./Logo";
+import Logo from "./layout/Logo";
 
 const Footer = () => {
   return (

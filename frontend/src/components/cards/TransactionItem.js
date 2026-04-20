@@ -1,4 +1,4 @@
-import { CategoryColours } from "../utils/categoryColours";
+import { CategoryColours } from "../../utils/categoryColours";
 
 const TransactionItem = ({
   transactionType,
