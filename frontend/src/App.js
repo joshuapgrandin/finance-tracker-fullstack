@@ -1,7 +1,7 @@
-import Features from "./components/Features";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import NavBar from "./components/NavBar";
+import Features from "./components/sections/Features";
+import Footer from "./components/layout/Footer";
+import Hero from "./components/sections/Hero";
+import NavBar from "./components/layout/NavBar";
 
 function App() {
   return (

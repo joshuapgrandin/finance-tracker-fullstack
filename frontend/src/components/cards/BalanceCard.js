@@ -1,5 +1,3 @@
-import CountUp from "react-countup";
-
 const BalanceCard = () => {
   return (
     <div className="bg-brand-800 text-neutral-50 py-6 px-2 rounded-xl shadow-lg">

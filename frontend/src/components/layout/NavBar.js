@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Logo from "./layout/Logo";
-import NavButton from "./ui/NavButton";
+import Logo from "./Logo";
+import NavButton from "../ui/NavButton";
 import { Menu, X } from "lucide-react";
 
 const NavBar = () => {

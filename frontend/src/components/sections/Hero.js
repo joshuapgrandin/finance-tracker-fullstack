@@ -1,8 +1,8 @@
-import BalanceCard from "./BalanceCard";
-import PrimaryButton from "./ui/PrimaryButton";
-import SecondaryButton from "./ui/SecondaryButton";
-import StatCard from "./StatCard";
-import TransactionItem from "./TransactionItem";
+import BalanceCard from "../cards/BalanceCard";
+import PrimaryButton from "../ui/PrimaryButton";
+import SecondaryButton from "../ui/SecondaryButton";
+import StatCard from "../cards/StatCard";
+import TransactionItem from "../cards/TransactionItem";
 import { motion } from "framer-motion";
 
 const Hero = () => {

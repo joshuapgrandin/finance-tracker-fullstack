@@ -1,5 +1,5 @@
 import { Zap, TrendingUp, DollarSign } from "lucide-react";
-import FeatureCard from "./FeatureCard";
+import FeatureCard from "../cards/FeatureCard";
 import { motion } from "framer-motion";
 
 const Features = () => {
