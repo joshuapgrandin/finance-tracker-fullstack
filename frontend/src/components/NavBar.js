@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Logo from "./Logo";
-import PrimaryButton from "./PrimaryButton";
+import NavButton from "./buttons/NavButton";
 import { Menu, X } from "lucide-react";
 
 const NavBar = () => {
@@ -32,7 +32,7 @@ const NavBar = () => {
               Log in
             </a>
           </li>
-          <PrimaryButton text={"Get started"} />
+          <NavButton text={"Get started"} />
         </ul>
         {/*MOBILE MENU*/}
         <div className="sm:hidden">
@@ -78,7 +78,7 @@ const NavBar = () => {
                 </a>
               </li>
               <li className="flex justify-center mb-4 mt-4">
-                <PrimaryButton text={"Get started"} />
+                <NavButton text={"Get started"} />
               </li>
             </ul>
           )}
