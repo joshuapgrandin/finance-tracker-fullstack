@@ -1,29 +1,15 @@
-import Features from "./components/sections/Features";
-import Footer from "./components/layout/Footer";
-import Hero from "./components/sections/Hero";
-import NavBar from "./components/layout/NavBar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
-    <div className="min-h-screen bg-neutral-50 text-gray-900">
-      {/*NAV BAR */}
-      <NavBar />
-
-      {/*MAIN SECTION*/}
-      <main>
-        {/*HERO SECTION*/}
-        <section className="hero">
-          <Hero />
-        </section>
-        {/*FEATURES SECTION */}
-        <section>
-          <Features />
-        </section>
-      </main>
-
-      {/*FOOTER*/}
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
   );
 }
 

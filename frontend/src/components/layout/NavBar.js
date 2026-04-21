@@ -9,7 +9,9 @@ const NavBar = () => {
   return (
     <nav className="relative h-18 border-b-neutral-200 border-b shadow-sm">
       <div className="max-w-7xl mx-auto flex justify-between items-center py-4 px-6 ">
-        <Logo />
+        <div className="m-2">
+          <Logo />
+        </div>
         {/*DESKTOP MENU*/}
         <ul className="gap-6 text-sm items-center hidden sm:flex">
           <li>
