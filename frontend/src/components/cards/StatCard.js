@@ -1,5 +1,6 @@
 const StatCard = ({ text, amount }) => {
-  let color = text === "Income" ? "text-income" : "text-expense";
+  let color =
+    text === "Income" || text === "Balance" ? "text-income" : "text-expense";
 
   return (
     <div className="bg-neutral-50 rounded-xl p-2 shadow-md border border-neutral-200 hover:shadow-lg transition">
