@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
-const PrimaryButton = ({ text, onClick, size = "medium" }) => {
+const PrimaryButton = ({ text, onClick, size = "medium", link }) => {
   const sizes = {
     small: "px-4 py-2 text-sm",
     medium: "px-6 py-3 text-base",
@@ -15,7 +16,7 @@ const PrimaryButton = ({ text, onClick, size = "medium" }) => {
       onClick={onClick}
       className={`bg-brand-700 rounded-lg text-white font-semibold hover:bg-brand-600 transition-colors ${sizes[size]}`}
     >
-      {text}
+      <Link to={link}>{text}</Link>
     </motion.button>
   );
 };

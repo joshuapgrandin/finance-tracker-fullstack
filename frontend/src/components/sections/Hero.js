@@ -4,6 +4,7 @@ import SecondaryButton from "../ui/SecondaryButton";
 import StatCard from "../cards/StatCard";
 import TransactionItem from "../cards/TransactionItem";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -36,7 +37,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
           className="flex gap-2 mt-6"
         >
-          <PrimaryButton text={"Sign up free"} />
+          <PrimaryButton text={"Sign up free"} link={"/dashboard"} />
           <SecondaryButton text={"See a demo"} />
         </motion.div>
         <motion.p
